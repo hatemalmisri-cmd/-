@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabkhati — 50 High-Protein Recipes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <span class="logo">🍲</span>
+        <div>
+          <h1>Tabkhati</h1>
+          <p class="tagline">50 recipes · max 600 kcal · min 30 g protein</p>
+        </div>
+      </div>
+      <div class="search">
+        <input id="search" type="search" placeholder="Search recipes, ingredients, cuisines…" aria-label="Search" />
+      </div>
+    </div>
+    <nav class="tabs wrap" id="tabs" aria-label="Categories"></nav>
+  </header>
+
+  <main class="wrap">
+    <section class="summary" id="summary"></section>
+    <section class="grid" id="grid" aria-live="polite"></section>
+    <p class="empty" id="empty" hidden>No recipes match your search.</p>
+  </main>
+
+  <div class="modal" id="modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card" role="document">
+      <button class="close" id="close" aria-label="Close">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer wrap">
+    <p>Nutrition values are per serving and approximate. Tabkhati © 2026.</p>
+  </footer>
+
+  <script src="recipes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
